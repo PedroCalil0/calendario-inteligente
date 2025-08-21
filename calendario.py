@@ -114,7 +114,7 @@ class ICSClient:
         self.sources_file = sources_file
         self.urls = safe_load_json(self.sources_file, [])
         self.events = []
-               self.status = "ICS: sem fontes"
+        self.status = "ICS: sem fontes"
         self.lock = threading.Lock()
 
     def add_source(self, url):
